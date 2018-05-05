@@ -66,7 +66,6 @@ header{
 }
 
 .header_text-box{
-   width: 80%;
     border-bottom:1px solid #56b36d;
     margin: 0 auto;
     
@@ -82,7 +81,6 @@ header{
 	font-size: 40px;
 	font-weight: 400;
     letter-spacing: 1px;
-    padding: 0 !important;
 
 
 }
@@ -92,7 +90,6 @@ header{
 	font-weight: 700;
     letter-spacing: 6px;
     color: #56b36d;
-    padding: 0 !important;
 
 
 }
@@ -102,7 +99,6 @@ header{
 	margin:5px;
 }
 .react_text{
-    width: 80%;
     font-size: 1em;
     margin: 0 auto;
     color: wheat;
