@@ -56,8 +56,8 @@ header{
     background-size: cover;
 }
 
-.program{
-    height: 120vh;
+.main{
+    height: auto;
     background: linear-gradient(#060b24, #175169, #56b36d);
     background-size: contain;
     background-repeat: no-repeat;
@@ -81,6 +81,7 @@ header{
 	font-size: 40px;
 	font-weight: 400;
     letter-spacing: 1px;
+    line-height: 20px;
 
 
 }
@@ -112,3 +113,62 @@ header{
     max-width: 100%;
     max-height: 100%;
 }
+
+/*speakers section*/
+.speakers{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+
+
+}
+.speaker{
+    position: relative;
+    width: 240px;
+    height: 341px;
+    margin: 70px 6px 10px 6px;
+    overflow: hidden;
+    max-width: auto;
+}
+
+.speaker::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;    
+    background-image: linear-gradient(to bottom, rgba(94, 117, 179, 0) 0%, rgba(94, 117, 179, 0.3) 40%, #5e75b3 70%, #5e75b3 100%);
+    pointer-events: none;
+    z-index: 2; 
+}
+    .speaker_content{
+        z-index: 3;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 0 20px 14px 20px;
+    text-align: left;
+    }
+
+#speaker_portrait{
+    filter: grayscale(1) brightness(0.7) sepia(1) hue-rotate(192deg) saturate(2.3) contrast(0.9);
+width: 240px;
+max-width: 100%;
+max-height: 100%; 
+}
+
+.speaker_name{
+    font-size: 1.7rem;
+    font-weight: 420;
+    line-height: 3px;
+}
+.speaker_lastName{
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+
