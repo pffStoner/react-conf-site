@@ -1,15 +1,11 @@
-*,html{
+*{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.container-fluid{
     margin: 0;
     padding: 0;
 }
 
 header{ 
-    height: 90vh;
+    height: 100vh;
     background-image: url("prague.jpg"), linear-gradient(#060b24, #175169, #56b36d);
     background-position: center;
     background-size: cover;
@@ -105,11 +101,11 @@ header{
     color: wheat;
 }
 .img_wrap{
-    max-width: 90%;
+    max-width: 80%;
     max-height: 50%;
     margin: 0 auto;
 }
-.program img{
+.img_wrap img{
     max-width: 100%;
     max-height: 100%;
 }
@@ -130,8 +126,16 @@ header{
     margin: 70px 6px 10px 6px;
     overflow: hidden;
     max-width: auto;
+     
 }
-
+@media screen and (max-width: 520px){
+    .speaker{
+        width: 40%;
+        height: auto;
+        margin: 3px;
+        min-width: 130px;
+    }
+}
 .speaker::before {
     content: "";
     position: absolute;
@@ -140,22 +144,15 @@ header{
     bottom: 0;
     display: block;
     width: 100%;    
-    background-image: linear-gradient(to bottom, rgba(94, 117, 179, 0) 0%, rgba(94, 117, 179, 0.3) 40%, #5e75b3 70%, #5e75b3 100%);
+    background-image: linear-gradient(to bottom, rgba(94, 117, 179, 0) 0%, 
+    rgba(94, 117, 179, 0.3) 40%, #5e75b3 70%, #5e75b3 100%);
     pointer-events: none;
     z-index: 2; 
 }
-    .speaker_content{
-        z-index: 3;
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    padding: 0 20px 14px 20px;
-    text-align: left;
-    }
+
 
 #speaker_portrait{
-    filter: grayscale(1) brightness(0.7) sepia(1) hue-rotate(192deg) saturate(2.3) contrast(0.9);
+filter: grayscale(1) brightness(0.7) sepia(1) hue-rotate(192deg) saturate(2.3) contrast(0.9);
 width: 240px;
 max-width: 100%;
 max-height: 100%; 
@@ -169,6 +166,12 @@ max-height: 100%;
 .speaker_lastName{
     font-size: 2.3rem;
     font-weight: 600;
+}
+.center{
+    margin:0 auto;
+}
+.center > .speaker:nth-last-child(-n+2) {
+    margin-top: 6px;
 }
 
 
